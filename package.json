@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "lint": "eslint .",
-    "check": "npm run lint && npm run build"
+    "validate:content": "node scripts/validate_blog.mjs",
+    "check": "npm run lint && npm run build && npm run validate:content"
   },
   "dependencies": {
     "next": "16.2.6",
